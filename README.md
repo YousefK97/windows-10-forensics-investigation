@@ -1,4 +1,4 @@
-Windows 10 Digital Forensics Investigation
+# Windows 10 Digital Forensics Investigation
 
 Overview
 This project is a hands-on Windows 10 digital forensics investigation performed in an isolated VMware virtual machine.
