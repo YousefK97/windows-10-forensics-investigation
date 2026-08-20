@@ -16,7 +16,7 @@ Windows shortcut artifacts
 ShellBags
 Program execution artifacts
 Evidence correlation and timeline analysis
-Lab Environment
+## Lab Environment
 Component	Details
 Operating System	Windows 10
 Virtualization	VMware
@@ -24,7 +24,7 @@ Forensic Tool	Autopsy
 Log Analysis	Windows Event Viewer
 Evidence Source	Windows 10 virtual disk image (.vmdk)
 Analysis Environment	Isolated virtual machine
-Investigation Objectives
+## Investigation Objectives
 
 The investigation was designed to answer the following questions:
 
@@ -37,7 +37,7 @@ Can file metadata and cryptographic hashes be recovered?
 Can deleted-file artifacts be identified?
 Can Windows user-activity artifacts such as ShellBags and shortcut files be recovered?
 Can multiple forensic artifacts be correlated into a timeline?
-Methodology
+## Methodology
 
 The investigation followed these general stages:
 
@@ -53,8 +53,8 @@ Analysed the Windows file system and forensic artifacts.
 Recorded timestamps, hashes, and other metadata.
 Correlated findings from multiple evidence sources.
 Documented observations and limitations.
-Windows Event Log Analysis
-Event ID 4624 — Interactive Logon
+## Windows Event Log Analysis
+### Event ID 4624 — Interactive Logon
 
 An Event ID 4624 was identified with:
 
@@ -64,7 +64,7 @@ Timestamp: 19 August 2026, 05:19:25
 
 This indicates that an interactive logon was recorded on the Windows 10 system.
 
-Event ID 4688 — PowerShell
+### Event ID 4688 — PowerShell
 
 An Event ID 4688 was identified for:
 
@@ -78,7 +78,7 @@ Creator Process: C:\Windows\explorer.exe
 
 This provides process-creation evidence showing that PowerShell was launched by Windows Explorer.
 
-Event ID 4688 — Notepad
+### Event ID 4688 — Notepad
 
 An Event ID 4688 was identified for:
 
@@ -88,7 +88,7 @@ Timestamp: 19 August 2026, 06:08:15
 
 This demonstrates that Notepad execution was recorded by Windows process-creation auditing.
 
-PowerShell Operational Logging
+## PowerShell Operational Logging
 
 PowerShell Operational logging was examined using Event Viewer.
 
@@ -102,13 +102,13 @@ The Add-Type command was not interpreted as malicious by itself. The artifact wa
 
 An Event ID 4104 search was also performed. No event containing the specific test-file terms was identified.
 
-Autopsy Analysis
+## Autopsy Analysis
 
 A copied Windows 10 VMware disk image was loaded into Autopsy for forensic analysis.
 
 The original VMware disk was preserved while the copied image was used for analysis.
 
-File-System Evidence
+### File-System Evidence
 
 Autopsy identified the Windows file system and the following user profile:
 
@@ -118,7 +118,7 @@ The investigation located:
 
 Desktop\Forensics Project\suspicious_file.txt
 
-File Metadata
+### File Metadata
 
 Autopsy recovered the following metadata for suspicious_file.txt:
 
@@ -132,8 +132,8 @@ SHA-256	Recovered by Autopsy
 
 The file timestamps were not treated as proof of a specific user action. The difference between creation/access timestamps and modification/change timestamps was recorded as an observation requiring contextual interpretation.
 
-Recovered Windows Artifacts
-Run Programs
+## Recovered Windows Artifacts
+### Run Programs
 
 Autopsy identified program execution artifacts for:
 
@@ -142,7 +142,7 @@ Autopsy identified program execution artifacts for:
 
 These artifacts provide independent evidence supporting the Windows Event Log process-creation findings.
 
-Recent Documents
+### Recent Documents
 
 Autopsy recovered Windows shortcut artifacts associated with:
 
@@ -152,7 +152,7 @@ investigation-notes.txt.lnk
 
 Windows .lnk artifacts can provide information about files and folders that were accessed or referenced by the system.
 
-ShellBags
+### ShellBags
 
 ShellBag artifacts were recovered showing Windows Explorer folder activity.
 
@@ -165,13 +165,13 @@ Modified
 Created
 Accessed
 Data Source
-Recycle Bin
+### Recycle Bin
 
 The Windows Recycle Bin artifact was examined for evidence of deleted files.
 
 This demonstrates the use of Autopsy to investigate deleted-file artifacts within a forensic disk image.
 
-Investigation Timeline
+## Investigation Timeline
 Date/Time	Source	Finding
 19 Aug 2026 05:19:25	Security Event 4624	Interactive logon
 19 Aug 2026 06:02:59	Security Event 4688	PowerShell execution
@@ -181,12 +181,12 @@ Date/Time	Source	Finding
 
 The timestamps from different forensic artifacts were compared without assuming that one artifact alone establishes causation.
 
-Key Findings
-Finding 1 — Interactive Logon
+## Key Findings
+### Finding 1 — Interactive Logon
 
 A Windows interactive logon was identified through Event ID 4624 with Logon Type 2.
 
-Finding 2 — PowerShell Execution
+### Finding 2 — PowerShell Execution
 
 PowerShell execution was identified through Event ID 4688.
 
@@ -194,29 +194,29 @@ The associated creator process was recorded as:
 
 C:\Windows\explorer.exe
 
-Finding 3 — Notepad Execution
+### Finding 3 — Notepad Execution
 
 Notepad execution was identified through Event ID 4688.
 
-Finding 4 — PowerShell Operational Activity
+### Finding 4 — PowerShell Operational Activity
 
 Event ID 4103 recorded a PowerShell Add-Type command invocation.
 
 No conclusion was made that this activity was malicious.
 
-Finding 5 — File-System Evidence
+### Finding 5 — File-System Evidence
 
 Autopsy recovered suspicious_file.txt from the Windows file system and provided detailed file metadata and cryptographic hashes.
 
-Finding 6 — Corroborating Evidence
+### Finding 6 — Corroborating Evidence
 
 Autopsy's Run Programs artifact independently identified both PowerShell and Notepad, supporting the process-creation findings from Windows Event Logs.
 
-Finding 7 — Windows User Activity
+### Finding 7 — Windows User Activity
 
 Recent Documents and ShellBag artifacts provided additional evidence of Windows user interaction with project-related files and folders.
 
-Limitations
+## Limitations
 
 This was a controlled laboratory investigation rather than a real-world incident response case.
 
@@ -228,7 +228,7 @@ Some Windows artifacts may not have been enabled or captured.
 PowerShell Event ID 4104 did not contain the specific test-file commands searched for.
 File timestamps were interpreted cautiously because timestamps alone do not establish user intent.
 The investigation does not establish malicious activity.
-Lessons Learned
+## Lessons Learned
 
 This project provided hands-on experience with:
 
@@ -260,6 +260,6 @@ Multiple independent forensic artifacts were examined and correlated, including 
 
 The project demonstrates practical experience with Windows forensic investigation and evidence analysis while maintaining a distinction between observed evidence and unsupported conclusions.
 
-Evidence Screenshots
+## Evidence Screenshots
 
 Screenshots documenting the investigation are available in the screenshots directory.
