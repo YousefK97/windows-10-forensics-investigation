@@ -1,6 +1,6 @@
 # Windows 10 Digital Forensics Investigation
 
-Overview
+## Overview
 This project is a hands-on Windows 10 digital forensics investigation performed in an isolated VMware virtual machine.
 
 The objective was to simulate a basic forensic investigation by generating controlled user activity, collecting Windows forensic artifacts, analysing them with Windows Event Viewer and Autopsy, and documenting the findings.
