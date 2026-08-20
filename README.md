@@ -251,7 +251,8 @@ Evidence preservation
 Timeline construction
 Evidence correlation
 Forensic documentation
-Conclusion
+
+## Conclusion
 
 This investigation demonstrated a basic end-to-end Windows forensic workflow using an isolated Windows 10 virtual machine.
 
