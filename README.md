@@ -104,7 +104,7 @@ Timestamp: 19 August 2026, 06:08:15
 
 This demonstrates that Notepad execution was recorded by Windows process-creation auditing.
 
-![Notepad Process Creation](screenshots/05-process-creation-notepad.png.png)
+![Notepad Process Creation](screenshots/05-process-creation-notepad.png)
 
 ## PowerShell Operational Logging
 
@@ -112,11 +112,11 @@ PowerShell Operational logging was examined using Event Viewer.
 
 ### PowerShell Artifact Details
 
-![PowerShell Artifact Details](screenshots/15-powershell-artifact-details.png.png)
+![PowerShell Artifact Details](screenshots/15-powershell-artifact-details.png)
 
 ### Powershell Creator Process 
 
-![PowerShell Creator Process](screenshots/16-powershell-creator-process.png.png)
+![PowerShell Creator Process](screenshots/16-powershell-creator-process.png)
 
 ### Event ID 4103 
 
@@ -128,7 +128,7 @@ This demonstrates that PowerShell operational logging captured a command invocat
 
 The Add-Type command was not interpreted as malicious by itself. The artifact was documented as an observed PowerShell command rather than evidence of malicious activity.
 
-![PowerShell Event ID 4103](screenshots/17-powershell-4103-command.png.png)
+![PowerShell Event ID 4103](screenshots/17-powershell-4103-command.png)
 
 An Event ID 4104 search was also performed. No event containing the specific test-file terms was identified.
 
@@ -138,7 +138,7 @@ A copied Windows 10 VMware disk image was loaded into Autopsy for forensic analy
 
 The original VMware disk was preserved while the copied image was used for analysis.
 
-![Autopsy Analysis](screenshots/08-autopsy-suspicious-file.png.png)
+![Autopsy Analysis](screenshots/08-autopsy-suspicious-file.png)
 
 ### File-System Evidence
 
@@ -150,7 +150,7 @@ The investigation located:
 
 Desktop\Forensics Project\suspicious_file.txt
 
-![Suspicious File Location](screenshots/09-suspicious-file-metadata.png.png)
+![Suspicious File Location](screenshots/09-suspicious-file-metadata.png)
 
 ### File Metadata
 
@@ -165,7 +165,7 @@ Autopsy recovered the following metadata for suspicious_file.txt:
 | MD5 |	Recovered by Autopsy |
 | SHA-256 |	Recovered by Autopsy |
 
-![File Metadata](screenshots/10-recycle-bin-evidence.png.png)
+![File Metadata](screenshots/10-recycle-bin-evidence.png)
 
 The file timestamps were not treated as proof of a specific user action. The difference between creation/access timestamps and modification/change timestamps was recorded as an observation requiring contextual interpretation.
 
