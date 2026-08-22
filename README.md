@@ -72,7 +72,7 @@ An Event ID 4688 was identified for:
 
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 
-![PowerShell Event](screenshots/03-successful-logon-event.png)
+![PowerShell Event](screenshots/03-successful-logon-event.png.png)
 
 Timestamp: 19 August 2026, 06:02:59
 
