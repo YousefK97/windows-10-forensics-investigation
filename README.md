@@ -30,7 +30,6 @@ Windows-10-Digital-Forensics/
 │   └── findings-report.txt
 └── screenshots/
     └── 17 evidence screenshots
-'''
 
 - `README.md` — Project overview, methodology, findings and conclusions
 - `notes/` — Investigation notes recorded during the analysis
