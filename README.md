@@ -335,6 +335,36 @@ This project provided hands-on experience with:
 - Evidence correlation
 - Forensic documentation
 
+## Key Tools & Skills Demonstrated
+
+### Tools
+
+- Windows Event Viewer
+- Autopsy
+- VMware
+- Windows 10
+- GitHub
+
+### Forensic Skills
+
+- Windows Security Event Log analysis
+- Event ID 4624 analysis
+- Event ID 4688 process creation analysis
+- PowerShell Operational Log analysis
+- Event ID 4103 analysis
+- Parent/creator process analysis
+- Windows file-system analysis
+- File metadata analysis
+- MD5 and SHA-256 hashing
+- Run Programs artifact analysis
+- Recent Documents / `.lnk` analysis
+- ShellBag analysis
+- Recycle Bin artifact analysis
+- Timeline construction
+- Evidence correlation
+- Evidence preservation
+- Forensic documentation
+
 ## Conclusion
 
 This investigation demonstrated a basic end-to-end Windows forensic workflow using an isolated Windows 10 virtual machine.
@@ -342,8 +372,6 @@ This investigation demonstrated a basic end-to-end Windows forensic workflow usi
 Multiple independent forensic artifacts were examined and correlated, including Windows Security Event Logs, PowerShell Operational logs, file-system metadata, Run Programs, Recent Documents, ShellBags, and Recycle Bin artifacts.
 
 The project demonstrates practical experience with Windows forensic investigation and evidence analysis while maintaining a distinction between observed evidence and unsupported conclusions.
-
-## Evidence Screenshots
 
 ## Evidence Screenshots
 
@@ -362,3 +390,11 @@ The evidence includes:
 - Recycle Bin artifacts
 - Windows user-activity artifacts
 - Additional supporting forensic evidence
+
+## Disclaimer
+
+This project was conducted in a controlled laboratory environment using a Windows 10 virtual machine.
+
+All activity was deliberately generated for educational and forensic-analysis purposes.
+
+The artifacts and findings presented in this repository should not be interpreted as evidence of malicious activity or as findings from a real-world security incident.
