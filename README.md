@@ -88,7 +88,19 @@ The investigation followed these general stages:
 10. Recorded timestamps, hashes, and other metadata.
 11. Correlated findings from multiple evidence sources.
 12. Documented observations and limitations.
-    
+
+## Investigation Workflow
+
+The investigation followed this workflow:
+
+1. **Generate Activity** — Performed controlled activity inside the Windows 10 virtual machine.
+2. **Collect Evidence** — Preserved a copy of the VMware virtual disk for forensic analysis.
+3. **Analyse Event Logs** — Examined Windows Security and PowerShell Operational logs using Event Viewer.
+4. **Analyse Disk Image** — Loaded the forensic disk copy into Autopsy.
+5. **Recover Artifacts** — Examined file metadata, Run Programs, Recent Documents, ShellBags, and Recycle Bin artifacts.
+6. **Correlate Evidence** — Compared findings from independent forensic sources.
+7. **Document Findings** — Recorded observations, timestamps, limitations, and conclusions.
+
 ## Windows Event Log Analysis
 
 ### Event ID 4624 — Interactive Logon
