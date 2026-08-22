@@ -105,13 +105,14 @@ The Recycle Bin artifact was examined for deleted-file evidence.
 
 This demonstrated the ability to investigate deleted-file artifacts within the forensic disk image.
 
-Timeline
-Time	Artifact	Observation
-05:19:25	Event 4624	Interactive logon
-06:02:59	Event 4688	PowerShell launched
-06:08:15	Event 4688	Notepad launched
-13:26:02	Autopsy	suspicious_file.txt modified/changed
-14:06:13	Autopsy	suspicious_file.txt created/accessed
+## Timeline
+| Time |	Artifact |	Observation |
+|---|---|---|
+05:19:25 |	Event 4624 |	Interactive logon |
+06:02:59 |	Event 4688 |	PowerShell launched |
+06:08:15 |	Event 4688 |	Notepad launched |
+13:26:02 |	Autopsy |	suspicious_file.txt modified/changed |
+14:06:13 |	Autopsy |	suspicious_file.txt created/accessed |
 Assessment
 
 The investigation successfully demonstrated the recovery and correlation of multiple Windows forensic artifacts.
