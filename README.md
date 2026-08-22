@@ -35,6 +35,12 @@ Windows-10-Digital-Forensics/
     └── Evidence Screenshot 17
 '''
 
+- `README.md` — Project overview, methodology, findings and conclusions
+- `notes/` — Investigation notes recorded during the analysis
+- `report/` — Final forensic findings report
+- `screenshots/` — Supporting screenshots and visual evidence
+- `.gitignore` — Prevents unnecessary VMware and temporary files from being committed
+
 ## Lab Environment 
 
 | Component |	Details |
