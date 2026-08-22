@@ -29,6 +29,14 @@ The investigation focuses on:
 | Evidence Source |	Windows 10 virtual disk image (.vmdk) |
 | Analysis Environment | Isolated virtual machine |
 
+### Tools Used
+
+- VMware Workstation — Virtual machine environment
+- Windows Event Viewer — Windows event log analysis
+- Autopsy — Digital forensic analysis
+- Windows 10 — Evidence-generation environment
+- GitHub — Investigation documentation and version control
+
 ## Investigation Objectives
 
 The investigation was designed to answer the following questions:
