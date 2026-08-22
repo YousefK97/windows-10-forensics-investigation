@@ -60,17 +60,19 @@ An Event ID 4624 was identified with:
 
 Logon Type: 2 — Interactive
 
+![Event ID 4624](screenshots/01-event-viewer-security-log.png.png)
+
 Timestamp: 19 August 2026, 05:19:25
 
 This indicates that an interactive logon was recorded on the Windows 10 system.
-
-![Event ID 4624](screenshots/01-event-viewer-security-log.png.png)
 
 ### Event ID 4688 — PowerShell
 
 An Event ID 4688 was identified for:
 
 C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
+![PowerShell Event](screenshots/03-successful-logon-event.png)
 
 Timestamp: 19 August 2026, 06:02:59
 
