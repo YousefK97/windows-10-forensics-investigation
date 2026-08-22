@@ -20,8 +20,8 @@ The investigation focuses on:
 
 ## Project Structure
 
-'''text
 Windows-10-Digital-Forensics/
+
 ├── README.md
 ├── .gitignore
 ├── notes/
@@ -29,10 +29,7 @@ Windows-10-Digital-Forensics/
 ├── report/
 │   └── findings-report.txt
 └── screenshots/
-    ├── Evidence Screenshot 01
-    ├── Evidence Screenshot 02
-    ├── ...
-    └── Evidence Screenshot 17
+    └── 17 evidence screenshots
 '''
 
 - `README.md` — Project overview, methodology, findings and conclusions
