@@ -304,4 +304,20 @@ The project demonstrates practical experience with Windows forensic investigatio
 
 ## Evidence Screenshots
 
-Screenshots documenting the investigation are available in the screenshots directory.
+## Evidence Screenshots
+
+Supporting screenshots from the investigation are stored in the `screenshots/` directory.
+
+The evidence includes:
+
+- Windows Security Event Log analysis
+- Event ID 4624 — Interactive Logon
+- Event ID 4688 — Process Creation
+- PowerShell execution
+- PowerShell Event ID 4103
+- PowerShell creator process
+- Autopsy file-system analysis
+- File metadata
+- Recycle Bin artifacts
+- Windows user-activity artifacts
+- Additional supporting forensic evidence
