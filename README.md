@@ -17,7 +17,23 @@ The investigation focuses on:
 - ShellBags
 - Program execution artifacts
 - Evidence correlation and timeline analysis
-- 
+
+## Project Structure
+
+'''text
+Windows-10-Digital-Forensics/
+├── README.md
+├── .gitignore
+├── notes/
+│   └── investigation-notes.txt
+├── report/
+│   └── findings-report.txt
+└── screenshots/
+    ├── Evidence Screenshot 01
+    ├── Evidence Screenshot 02
+    ├── ...
+    └── Evidence Screenshot 17
+
 ## Lab Environment
 
 | Component |	Details |
