@@ -92,7 +92,7 @@ The event also identified:
 
 This provides process-creation evidence showing that PowerShell was launched by Windows Explorer.
 
-![PowerShell Process](screenshots/06-powershell-process.png.png)
+![PowerShell Process](screenshots/06-powershell-process.png)
 
 ### Event ID 4688 — Notepad
 
