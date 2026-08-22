@@ -34,7 +34,7 @@ Windows-10-Digital-Forensics/
     ├── ...
     └── Evidence Screenshot 17
 
-## Lab Environment
+## Lab Environment 
 
 | Component |	Details |
 |---|---|
