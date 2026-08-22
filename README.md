@@ -64,7 +64,7 @@ Timestamp: 19 August 2026, 05:19:25
 
 This indicates that an interactive logon was recorded on the Windows 10 system.
 
-![Event ID 4624](screenshots/01-event-viewier-security-log.png.png)
+![Event ID 4624](screenshots/01-event-viewer-security-log.png.png)
 
 ### Event ID 4688 — PowerShell
 
