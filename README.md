@@ -22,6 +22,7 @@ The investigation focuses on:
 
 Windows-10-Digital-Forensics/
 
+<pre>
 ├── README.md
 ├── .gitignore
 ├── notes/
@@ -30,6 +31,7 @@ Windows-10-Digital-Forensics/
 │   └── findings-report.txt
 └── screenshots/
     └── 17 evidence screenshots
+</pre>    
 
 - `README.md` — Project overview, methodology, findings and conclusions
 - `notes/` — Investigation notes recorded during the analysis
