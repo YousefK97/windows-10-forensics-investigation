@@ -1,1 +1,19 @@
+# VMware files
+*.vmdk
+*.vmem
+*.vmss
+*.vmsn
+*.vmxf
+*.nvram
+*.lck/
 
+# Windows temporary files
+*.tmp
+*.temp
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+
+# Autopsy temporary/output files
+*.lock
