@@ -1,1 +1,163 @@
+Windows 10 Digital Forensics Investigation
+Investigation Notes
 
+1. Investigation Overview
+
+This investigation was conducted in an isolated Windows 10 VMware virtual machine to practise basic digital forensic investigation techniques.
+
+The investigation involved generating controlled system activity and examining the resulting Windows forensic artifacts.
+
+2. Lab Environment
+
+Operating System: Windows 10
+Virtualization: VMware
+Forensic Tool: Autopsy
+Log Analysis: Windows Event Viewer
+Evidence Source: Windows 10 virtual disk image (.vmdk)
+
+3. Investigation Activities
+
+The following controlled activities were performed during the investigation:
+
+- Logged into the Windows 10 virtual machine.
+- Opened Windows Event Viewer.
+- Examined Windows Security Event Logs.
+- Investigated Event ID 4624.
+- Investigated Event ID 4688.
+- Executed PowerShell.
+- Executed Notepad.
+- Examined PowerShell Operational logs.
+- Investigated Event ID 4103.
+- Created a test file named suspicious_file.txt.
+- Examined the file using Autopsy.
+- Examined Windows file-system metadata.
+- Examined Run Programs artifacts.
+- Examined Recent Documents artifacts.
+- Examined ShellBag artifacts.
+- Examined Recycle Bin artifacts.
+- Compared timestamps from different forensic sources.
+
+4. Windows Event Log Findings
+
+Event ID 4624
+
+An Event ID 4624 was identified with Logon Type 2 (Interactive).
+
+Timestamp:
+19 August 2026, 05:19:25
+
+This indicates that an interactive logon was recorded.
+
+Event ID 4688 — PowerShell
+
+PowerShell execution was identified:
+
+C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+
+Timestamp:
+19 August 2026, 06:02:59
+
+Creator Process:
+
+C:\Windows\explorer.exe
+
+Event ID 4688 — Notepad
+
+Notepad execution was identified:
+
+C:\Windows\System32\notepad.exe
+
+Timestamp:
+19 August 2026, 06:08:15
+
+5. PowerShell Investigation
+
+PowerShell Operational logging was examined.
+
+Event ID 4103 was identified containing:
+
+CommandInvocation(Add-Type): "Add-Type"
+
+This was documented as an observed PowerShell command invocation.
+
+The Add-Type command was not considered evidence of malicious activity by itself.
+
+An Event ID 4104 search was also performed. No event containing the specific test-file terms was identified.
+
+6. File-System Investigation
+
+The test file suspicious_file.txt was located within:
+
+Users\IEUser\Desktop\Forensics Project\
+
+The file was examined using Autopsy.
+
+The following metadata was recovered:
+
+Created:
+2026-08-19 14:06:13 BST
+
+Modified:
+2026-08-19 13:26:02 BST
+
+Accessed:
+2026-08-19 14:06:13 BST
+
+Changed:
+2026-08-19 13:26:02 BST
+
+MD5:
+Recovered by Autopsy
+
+SHA-256:
+Recovered by Autopsy
+
+7. Recovered Windows Artifacts
+
+The following artifacts were examined:
+
+Run Programs
+- notepad.exe
+- powershell.exe
+
+Recent Documents
+- Forensics Project.lnk
+- suspicious_file.txt.lnk
+- investigation-notes.txt.lnk
+
+ShellBags
+- Windows Explorer folder activity
+- Path information
+- Registry information
+- Timestamp information
+
+Recycle Bin
+- Examined for deleted-file artifacts.
+
+8. Evidence Correlation
+
+Evidence from Windows Event Viewer and Autopsy was compared to identify relationships between system activity and recovered forensic artifacts.
+
+Event ID 4688 provided process-creation evidence for PowerShell and Notepad.
+
+Autopsy's Run Programs artifacts independently identified PowerShell and Notepad, providing corroborating evidence.
+
+File-system metadata and Windows user-activity artifacts provided additional context.
+
+9. Investigation Limitations
+
+This investigation was performed in a controlled virtual environment.
+
+The activity was deliberately generated for testing purposes.
+
+The investigation does not establish malicious activity.
+
+File timestamps were interpreted cautiously because timestamps alone do not establish user intent.
+
+Some Windows artifacts may not have been enabled or captured.
+
+10. Conclusion
+
+The investigation demonstrated a basic Windows forensic workflow involving Windows Event Viewer, PowerShell Operational logging, Autopsy, file-system analysis, Windows user-activity artifacts, and timeline correlation.
+
+The investigation provided practical experience in collecting, analysing, correlating, and documenting Windows forensic evidence.
