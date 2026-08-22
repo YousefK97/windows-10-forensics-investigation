@@ -156,7 +156,7 @@ File timestamps were interpreted cautiously because timestamps alone do not esta
 
 Some Windows artifacts may not have been enabled or captured.
 
-10. Conclusion
+10. Conclusion 
 
 The investigation demonstrated a basic Windows forensic workflow involving Windows Event Viewer, PowerShell Operational logging, Autopsy, file-system analysis, Windows user-activity artifacts, and timeline correlation.
 
